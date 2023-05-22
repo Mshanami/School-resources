@@ -8,7 +8,7 @@ function App() {
 
     const formData = new FormData(e.target);
     const payload = Object.fromEntries(formData);
- 
+
     console.log(payload);
   }
   return (
