@@ -28,6 +28,7 @@
 }
 .home-page{
 	display: flex;
+	flex-direction: initial;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
@@ -67,6 +68,12 @@
 	font-size: 20px;
 	margin-bottom: 20px;
 }
+.home-page img{
+	width: 300px;
+	height: auto;
+
+}
+
 Link{ 
 	text-decoration: none;
  }
