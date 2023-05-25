@@ -4,6 +4,23 @@ import './index.css';
 import Router from './router';
 import First from './first';
 import reportWebVitals from './reportWebVitals';
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAtbhOZoQsb17gWIN9M7L3agXymsdkbuJk",
+  authDomain: "high-school-resources.firebaseapp.com",
+  projectId: "high-school-resources",
+  storageBucket: "high-school-resources.appspot.com",
+  messagingSenderId: "506656882140",
+  appId: "1:506656882140:web:e55f68da94672a50992319"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
